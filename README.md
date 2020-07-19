@@ -15,3 +15,4 @@ Project requires Qtcreator and C++ with NGL(University Graphics Library)
 
 
 ![Alt text](output/BresenhamLinePrinciple_01.ppm?raw=true "BresenhamLinePrinciple_01")
+![Alt text](output/BresenhamLinePrinciple_02.ppm?raw=true "BresenhamLinePrinciple_02")
