@@ -60,7 +60,7 @@ Bresenham  Line  Drawing  Algorithm  contains  two  phases  :
 
 > -   dlower − dupper = 2m(xk + 1) − 2yk + 2b − 1
 
--   substitute m with dy/dx where dx and dy are the differences between the end-points.
+         -    substitute m with dy/dx where dx and dy are the differences between the end-points.
 
 > ```
 >            dx(dlower−dupper) = dx(2dy.dx(xk + 1) − 2yk + 2b − 1)
@@ -69,7 +69,7 @@ Bresenham  Line  Drawing  Algorithm  contains  two  phases  :
 >
 > ```
 
--   So, a decision parameter Pk for the kth step along a line is given by −
+         -    So, a decision parameter Pk for the kth step along a line is given by −
 
 > ```
 >              pk = dx(dlower − dupper)
@@ -77,11 +77,11 @@ Bresenham  Line  Drawing  Algorithm  contains  two  phases  :
 >
 > ```
 
--   The sign of the decision parameter Pk is the same as that of dlower−dupper.
+         -    The sign of the decision parameter Pk is the same as that of dlower−dupper.
 
--   If pk is negative, choose the lower pixel, otherwise choose the upper pixel.
+         -    If pk is negative, choose the lower pixel, otherwise choose the upper pixel.
 
--   At step k+1, the decision parameter is given as −
+         -    At step k+1, the decision parameter is given as −
     * pk + 1 = 2dy.xk + 1 − 2dx.(yk+1) + C
 
     Subtracting pk from above statement we get −
@@ -90,7 +90,7 @@ Bresenham  Line  Drawing  Algorithm  contains  two  phases  :
     *  **pk + 1 = pk + 2dy − 2dx((yk+1) − yk)**
     Where, (Yk+1) – Yk is either 0 or 1 depending on the sign of Pk.
 
--   The first decision parameter p0 is evaluated at (x0, y0) is given as −
+         -    The first decision parameter p0 is evaluated at (x0, y0) is given as −
     *  **p0 = 2dy − dx**
 * **For slope(m) > 1 && slope(m) = 1 :**
 
