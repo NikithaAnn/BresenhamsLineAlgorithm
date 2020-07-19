@@ -1,0 +1,20 @@
+#Target is the name of the exe
+TARGET=BresnhamLinePrinciple
+#where to put .o files $$PWD means in proj dir
+OBJECTS_DIR=$$PWD/obj
+# now set some QMAKE settings
+# don't build against qt libs
+CONFIG-=qt
+#use C++ 11
+CONFIG+=c++11
+DEFINES+= NDEBUG
+# add source files
+SOURCES +=$$PWD/src/main.cpp  \
+          $$PWD/src/BresnhamLinePrinciple.cpp
+
+HEADERS +=$$PWD/include/BresnhamLinePrinciple.h
+
+INCLUDEPATH+= $$PWD/include
+
+HEADERS +=$$PWD/images/
+
