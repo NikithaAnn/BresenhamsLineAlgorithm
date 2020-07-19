@@ -14,4 +14,4 @@ The Bresenham algorithm is an incremental scan conversion algorithm. The big adv
 Project requires Qtcreator and C++ with NGL(University Graphics Library)
 
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Alt text](images/test.png?raw=true "Title")
