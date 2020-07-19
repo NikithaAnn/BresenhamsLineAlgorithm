@@ -52,8 +52,8 @@ Bresenham  Line  Drawing  Algorithm  contains  two  phases  :
 The project requires the following,
 
 
-<p align="center">
-  <img src="https://github.com/waldyr/Sublime-Installer/blob/master/sublime_text.png?raw=true" alt="Sublime's custom image"/>
+<p align="left">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Qt_logo_2013.svg" alt="Qtcreator Icon"/>
 </p>Qtcreator
 
 NGL (University  Graphics  Library)
