@@ -52,8 +52,9 @@ Bresenham  Line  Drawing  Algorithm  contains  two  phases  :
 The project requires the following,
 
 
-![alt text](https://upload.wikimedia.org/wikipedia/commons/f/fc/Qt_logo_2013.svg  "Qtcreator"){:height="36px" width="36px"}
-Qtcreator
+<p align="center">
+  <img src="https://github.com/waldyr/Sublime-Installer/blob/master/sublime_text.png?raw=true" alt="Sublime's custom image"/>
+</p>Qtcreator
 
 NGL (University  Graphics  Library)
 
@@ -65,11 +66,10 @@ NGL (University  Graphics  Library)
 ##  Output
 The image file to this algorithm can be found in, BresenhamLinePrinciple/BresnhamLinePrinciple.app/Contents/MacOS, on MacOSx
 
-        ![Alt  text](output/BresenhamLinePrinciple_01.png?raw=true  "BresenhamLinePrinciple_01")
+![Alt  text](output/BresenhamLinePrinciple_01.png?raw=true  "BresenhamLinePrinciple_01")
 
 Output 1: Simple Bresenham on a grid with center axis marked
 
-
-        ![Alt  text](output/BresenhamLinePrinciple_02.png?raw=true  "BresenhamLinePrinciple_02")
+![Alt  text](output/BresenhamLinePrinciple_02.png?raw=true  "BresenhamLinePrinciple_02")
 Output 2: Bresenham Principle applied on all octants
 
