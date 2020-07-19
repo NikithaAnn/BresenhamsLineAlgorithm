@@ -11,7 +11,11 @@ The Bresenham algorithm is an incremental scan conversion algorithm. The big adv
 
 
 ## Requirements
+<<<<<<< HEAD
 Project requires Qtcreator and C++ with NGL(University Graphics Library)
 
 
 ![Alt text](images/test.png?raw=true "Title")
+=======
+Project requires Qtcreator and C++ with NGL(University Graphics Library)
+>>>>>>> parent of 18b43c0... New Changes to show three modes

@@ -1,5 +1,5 @@
-#ifndef BRESNHAMLINEPRINCIPLE_H__
-#define BRESNHAMLINEPRINCIPLE_H__
+#ifndef IMAGEWRITE_H__
+#define IMAGEWRITE_H__
 
 #include<string>
 struct vertex 																				//vertex (x,y)
@@ -7,15 +7,15 @@ struct vertex 																				//vertex (x,y)
   int x;
   int y;
 };
-class BresnhamLinePrinciple
+class ImageWrite
 {
 public:
-  BresnhamLinePrinciple() : m_width(0), m_height(0),m_data(0)
+  ImageWrite() : m_width(0), m_height(0),m_data(0)
   {
 
   }
-  BresnhamLinePrinciple(int _w,int _h);
-  ~BresnhamLinePrinciple();
+  ImageWrite(int _w,int _h);
+  ~ImageWrite();
   void save(const std::string &_fname);
   void setPixel(int _x,int _y,unsigned char _r,unsigned char _g,unsigned char _b);
   void clear(unsigned char _r,unsigned char _g,unsigned char _b);
