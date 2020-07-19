@@ -1,5 +1,5 @@
 #Target is the name of the exe
-TARGET=ImageWrite
+TARGET=BresnhamsLinePrinciple
 #where to put .o files $$PWD means in proj dir
 OBJECTS_DIR=$$PWD/obj
 # now set some QMAKE settings
@@ -10,9 +10,9 @@ CONFIG+=c++11
 DEFINES+= NDEBUG
 # add source files
 SOURCES +=$$PWD/src/main.cpp  \
-          $$PWD/src/ImageWrite.cpp
+          $$PWD/src/BresnhamLinePrinciple.cpp
 
-HEADERS +=$$PWD/include/ImageWrite.h
+HEADERS +=$$PWD/include/BresnhamLinePrinciple.h
 
 INCLUDEPATH+= $$PWD/include
 

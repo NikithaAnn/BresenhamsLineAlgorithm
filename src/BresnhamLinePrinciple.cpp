@@ -1,16 +1,16 @@
-#include "ImageWrite.h"
+#include "BresnhamLinePrinciple.h"
 #include <cassert>
 #include <fstream>
 #include <iostream>
 
-ImageWrite::ImageWrite(int _w,int _h)
+BresnhamLinePrinciple::BresnhamLinePrinciple(int _w,int _h)
 {
   m_width=_w;
   m_height=_h;
   m_data= new unsigned char [m_width*m_height*3];
 }
 
-ImageWrite::~ImageWrite()
+BresnhamLinePrinciple::~BresnhamLinePrinciple()
 {
   if(m_data !=0)
  {
@@ -18,7 +18,7 @@ ImageWrite::~ImageWrite()
   }
 }
 
-void ImageWrite::save(const std::string &_fname)												//Saving to file named _fname
+void BresnhamLinePrinciple::save(const std::string &_fname)												//Saving to file named _fname
 {
       std::ofstream output;
       output.open(_fname);
@@ -46,7 +46,7 @@ void ImageWrite::save(const std::string &_fname)												//Saving to file nam
         output.close();
 }
 
-void ImageWrite::setPixel(int _x, int _y, unsigned char _r, unsigned char _g, unsigned char _b) //Illuminating pixel at (x,y)
+void BresnhamLinePrinciple::setPixel(int _x, int _y, unsigned char _r, unsigned char _g, unsigned char _b) //Illuminating pixel at (x,y)
 {
       assert(_x<m_width && _y<m_height);
       unsigned int index=(_y*m_width*3)+(_x*3);
@@ -54,7 +54,7 @@ void ImageWrite::setPixel(int _x, int _y, unsigned char _r, unsigned char _g, un
       m_data[index+1]=_g;
       m_data[index+2]=_b;
 }
-void ImageWrite::clear(unsigned char _r,unsigned char _g,unsigned char _b)						//Setting up a background color
+void BresnhamLinePrinciple::clear(unsigned char _r,unsigned char _g,unsigned char _b)						//Setting up a background color
 {
       for(int y=0;y<m_height;++y)
       {
@@ -64,7 +64,7 @@ void ImageWrite::clear(unsigned char _r,unsigned char _g,unsigned char _b)						
         }
       }
 }
-void ImageWrite::swapvertex(vertex &_a,vertex &_b)												//End is Start
+void BresnhamLinePrinciple::swapvertex(vertex &_a,vertex &_b)												//End is Start
 {
       vertex temp;
       temp.x=_a.x;
@@ -76,14 +76,14 @@ void ImageWrite::swapvertex(vertex &_a,vertex &_b)												//End is Start
       _b.y=temp.y;
 
 }
-void ImageWrite::swapvalues(vertex &_a)
+void BresnhamLinePrinciple::swapvalues(vertex &_a)
 {
   int temp;
   temp=_a.x;
   _a.x=_a.y;
   _a.y=temp;
 }
-void ImageWrite::DrawLine(vertex start,vertex end)
+void BresnhamLinePrinciple::plotLine(vertex start,vertex end)
 {
       int _dx,_dy,y,steep=0,yinc=-1,x=0,D;
 
@@ -111,10 +111,10 @@ void ImageWrite::DrawLine(vertex start,vertex end)
       for(x=start.x;x<end.x;x++)
       {
         D=D+2*_dy;
-        if(steep)																				//If the line is steep,we setPixel(y,x) as we go in opposite direction
+//        if(steep)																				//If the line is steep,we setPixel(y,x) as we go in opposite direction
           setPixel(y,x,255,0,127);
-        else
-          setPixel(x,y,255,255,0);
+//        else
+//          setPixel(x,y,255,255,0);
 
         if(D>0)
          {
