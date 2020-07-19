@@ -71,5 +71,6 @@ The image file to this algorithm can be found in, BresenhamLinePrinciple/Bresnha
 Output 1: Simple Bresenham on a grid with center axis marked
 
 ![Alt  text](output/BresenhamLinePrinciple_02.png?raw=true  "BresenhamLinePrinciple_02")
+
 Output 2: Bresenham Principle applied on all octants
 
