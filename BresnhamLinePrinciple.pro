@@ -16,3 +16,4 @@ HEADERS +=$$PWD/include/BresnhamLinePrinciple.h
 
 INCLUDEPATH+= $$PWD/include
 
+

@@ -52,13 +52,13 @@ Bresenham  Line  Drawing  Algorithm  contains  two  phases  :
 The project requires the following,
 
 
-<p align="left">
+Qtcreator<p align="left">
   <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Qt_logo_2013.svg" width="5%" alt="Qtcreator Icon"/>
-</p> Qtcreator
-<p align="left">
+</p>
+NGL (University  Graphics  Library)<p align="left">
   <img src="https://draconisart.com/wp-content/uploads/2019/03/education.png" width="5%" alt="NCCA Icon"/>
 </p>
-NGL (University  Graphics  Library)
+
 
 
 
