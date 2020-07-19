@@ -53,8 +53,8 @@ The project requires the following,
 
 
 <p align="left">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Qt_logo_2013.svg" alt="Qtcreator Icon"/>
-</p>Qtcreator
+  <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Qt_logo_2013.svg" width="5%" alt="Qtcreator Icon"/>
+</p> Qtcreator
 
 NGL (University  Graphics  Library)
 
